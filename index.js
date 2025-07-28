@@ -91,7 +91,7 @@ if (!recupere) {
     const price = req.body.price;
     const updateproduit = await produitModel.findByIdAndUpdate(produitId, {produitName, price }, {"new":true});
     res.send({
-        message: "produit+ to updated",
+        message: "produit to updated",
         updateproduit
         
     });
