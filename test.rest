@@ -1,0 +1,31 @@
+GET http://localhost:3000/produits
+
+###
+GET http://localhost:3000/produits/6883847228a238e075f923be
+
+###
+POST http://localhost:3000/produits
+Content-Type: application/json
+
+{
+    "produitName": "pizza",
+    "price": 12,
+    "stockStatus": "en stock"
+}
+
+###
+PATCH http://localhost:3000/produits/6883847228a238e075f923be
+Content-Type: application/json
+
+{
+    "produitName": "tomate",
+    "price": 12000,
+    "stockStatus": "petit stock"
+}
+
+
+###
+PATCH http://localhost:3000/produits/6883847228a238e075f923be/en stock
+
+###
+DELETE http://localhost:3000/produits/6883847228a238e075f923be
